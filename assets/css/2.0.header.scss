@@ -1,0 +1,246 @@
+.header {
+  &__line {
+    background: $bodyBackgroundSecondaryInverted;
+    color: $bodyColorPrimaryInverted;
+  }
+  &__line-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__line-actions {
+    position: relative;
+    width: 100%;
+    font-size: 0.688rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      border-bottom: solid 1px $bodyBorderColorPrimaryInverted;
+      top: 0;
+      left: -20px;
+      width: 100vw;
+      opacity: 0.5;
+    }
+  }
+  &__phone {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    min-height: 32px;
+    width: calc(100% / 3);
+    transition: color 0.2s ease-in-out;
+    svg {
+      margin-right: 9px;
+      position: relative;
+      top: -1px;
+    }
+  }
+  &__note {
+    width: calc(100% / 3);
+    text-align: center;
+  }
+  &__profile {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: calc(100% / 3);
+    min-height: 32px;
+    transition: color 0.2s ease-in-out;
+    svg {
+      margin-right: 7px;
+      position: relative;
+      top: -1px;
+    }
+  }
+  &__request {
+    display: none;
+    align-items: center;
+    text-transform: uppercase;
+    transition: color 0.2s ease-in-out;
+    svg {
+      margin-right: 7px;
+      position: relative;
+      top: -1px;
+    }
+  }
+  &__content {
+    border-bottom: solid 1px #e0e0e0;
+    padding: 9px 0 7px;
+  }
+  &__content-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    display: block;
+    height: 73px;
+    img {
+      display: block;
+      height: 100%;
+      width: auto;
+    }
+  }
+  &__btn {
+    width: 54px;
+    height: 39px;
+    border: #e0e0e0 solid 1px;
+    border-radius: 3px;
+    position: relative;
+    &:hover,
+    &:active,
+    &:focus {
+      border: #e0e0e0 solid 1px;
+    }
+    div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 23px;
+      height: 16px;
+      span {
+        height: 2px;
+        width: 100%;
+        background: #7c7c7d;
+        position: absolute;
+        border-radius: 2px;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        &:nth-of-type(1) {
+          top: 0%;
+        }
+        &:nth-of-type(2) {
+          top: 50%;
+        }
+        &:nth-of-type(3) {
+          top: 100%;
+        }
+      }
+    }
+  }
+  &__menu {
+    display: none;
+  }
+}
+
+.lang {
+  &__toggler {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    min-height: 28px;
+    transition: color 0.2s ease-in-out;
+    svg {
+      width: 16px;
+      height: auto;
+      display: block;
+      margin-left: 6px;
+    }
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .header {
+    &__line-row {
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 32px;
+    }
+    &__line-actions {
+      justify-content: start;
+      gap: 25px;
+      width: auto;
+      &:before {
+        display: none;
+      }
+    }
+    &__phone {
+      width: auto;
+      margin-right: 19px;
+    }
+    &__note {
+      width: auto;
+    }
+    &__profile {
+      width: auto;
+    }
+    &__request {
+      display: flex;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header {
+    background: #f8f9fa;
+    &__phone,
+    &__profile,
+    &__request {
+      &:hover {
+        color: $bodyColorAccent;
+      }
+    }
+    &__content {
+      border-top: solid 3px $bodyBackgroundPrimary;
+      border-bottom: solid 3px #e0e0e0;
+      padding: 0;
+    }
+    &__btn {
+      display: none;
+    }
+    &__menu {
+      display: block;
+      nav {
+        & > ul {
+          display: flex;
+          list-style: none;
+          gap: 5px;
+          & > li {
+            position: relative;
+            & > a {
+              padding: 30px 10px;
+              text-decoration: none;
+              font-size: 0.875rem;
+              transition: color 0.2s ease-in-out,
+                background-color 0.2s ease-in-out;
+              line-height: 1.714;
+              color: #808080;
+              display: flex;
+              align-items: center;
+              &:hover {
+                background: $bodyBackgroundNeutral;
+                color: $bodyColorPrimaryInverted;
+              }
+              & > svg {
+                width: 16px;
+                height: auto;
+                display: block;
+                margin-left: 10px;
+              }
+              & > span {
+                position: absolute;
+                left: 12px;
+                top: 18px;
+                font-size: 0.625rem;
+                color: #dc3545;
+                text-transform: uppercase;
+                font-weight: 700;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .lang {
+    &:hover {
+      color: $bodyColorAccent;
+    }
+  }
+}

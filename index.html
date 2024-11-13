@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta name="robots" content="noindex, nofollow">
+   <meta charset="UTF-8">
+   <meta name="theme-color" content="#fff">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <style>
+   :root {
+      --cstm-body-background-primary: #FFFFFF;
+      --cstm-body-background-secondary: #F1F1F1;
+      --cstm-body-background-tertiary: #B9BBBE;
+      --cstm-body-background-neutral: #FC9012;
+      --cstm-body-background-accent: #B60000;
+      --cstm-body-background-primary-inverted: #464646;
+      --cstm-body-background-secondary-inverted: #2B90C0;
+      --cstm-body-background-tertiary-inverted: ;
+      --cstm-body-background-neutral-inverted: ;
+      --cstm-body-background-accent-inverted: ;
+
+      --cstm-body-color-primary: #395D79;
+      --cstm-body-color-secondary: #212529;
+      --cstm-body-color-tertiary: ;
+      --cstm-body-color-neutral: var(--cstm-body-background-secondary-inverted);
+      --cstm-body-color-accent: var(--cstm-body-background-neutral);
+      --cstm-body-color-primary-inverted: #ffffff;
+      --cstm-body-color-secondary-inverted: #C9C9C9;
+      --cstm-body-color-tertiary-inverted: ;
+      --cstm-body-color-neutral-inverted: ;
+      --cstm-body-color-accent-inverted: ;
+
+      --cstm-body-border-color-primary: #CED4DA;
+      --cstm-body-border-color-secondary: #808080;
+      --cstm-body-border-color-tertiary: #76ABCC;
+      --cstm-body-border-color-primary-inverted: #CDCDCD;
+
+      --cstm-body-font-family-primary: "Myriad Set Pro", sans-serif;
+
+      --cstm-font-size: 16px;
+      --cstm-line-height: 1.25;
+   }
+   </style>
+   <link rel="stylesheet" href="assets/css/assistant.css">
+   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="assets/css/style.css">
+   <title>Home</title>
+</head>
+
+<body class="cstm-body">
+
+   <header class="header">
+      <div class="header__line">
+         <div class="container">
+            <div class="header__line-row">
+               <div class="header__lang lang">
+                  <button class="lang__toggler">
+                     <span>English</span>
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="m6.5 8.5 6 7 6-7h-12z" />
+                     </svg>
+                  </button>
+               </div>
+               <div class="header__line-actions">
+                  <a href="tel:18004257570" class="header__phone">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" fill="currentColor"
+                        viewBox="0 0 15 16">
+                        <path
+                           d="M3.008 7.004c1.224 2.422 3.06 4.258 5.508 5.508l1.836-1.836c.234-.26.52-.326.859-.196a9.326 9.326 0 0 0 2.969.47c.208 0 .397.077.566.234.17.156.254.351.254.586v2.93a.784.784 0 0 1-.254.566.784.784 0 0 1-.566.254c-2.578 0-4.955-.632-7.13-1.895a13.992 13.992 0 0 1-5.155-5.156C.632 6.294 0 3.918 0 1.339 0 1.133.085.944.254.774A.784.784 0 0 1 .82.52h2.93c.234 0 .43.084.586.253.156.17.234.359.234.567 0 1.042.157 2.031.47 2.969.103.338.038.625-.196.859L3.008 7.004Z" />
+                     </svg>
+                     <span>1-800-425-7570</span>
+                  </a>
+                  <div class="header__note">Se Habla Español </div>
+                  <button class="header__request">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="18" fill="currentColor"
+                        viewBox="0 0 14 18">
+                        <path
+                           d="M1.7.573h6.64l5 5.004v10.007c0 .443-.163.827-.488 1.153-.326.326-.71.489-1.153.489H1.661c-.443 0-.827-.163-1.153-.489a1.578 1.578 0 0 1-.488-1.153V2.214c0-.442.163-.827.488-1.152A1.62 1.62 0 0 1 1.7.573Zm5.82 5.825h4.57L7.52 1.824v4.574Z" />
+                     </svg>
+                     <span>Request Brochure</span>
+                  </button>
+                  <a href="#" class="header__profile">
+                     <svg width="14" height="15" viewBox="0 0 14 15" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M9.20993 6.54228C9.20993 6.54228 9.04705 6.70516 8.7213 7.03092C8.39554 7.35668 7.77008 7.51956 6.84493 7.51956C5.91978 7.51956 5.13145 7.1938 4.47993 6.54228C3.82842 5.89077 3.50266 5.10244 3.50266 4.17728C3.50266 3.25213 3.82842 2.4638 4.47993 1.81228C5.13145 1.16077 5.91978 0.835011 6.84493 0.835011C7.77008 0.835011 8.55842 1.16077 9.20993 1.81228C9.86145 2.4638 10.1872 3.25213 10.1872 4.17728C10.1872 5.10244 9.86145 5.89077 9.20993 6.54228ZM4.12811 9.55228C4.12811 9.55228 4.37569 9.49365 4.87084 9.37637C5.36599 9.2591 6.02402 9.20047 6.84493 9.20047C7.66584 9.20047 8.57145 9.31774 9.56175 9.55228C10.5521 9.78683 11.4577 10.1712 12.2786 10.7055C13.0995 11.2397 13.5099 11.8456 13.5099 12.5232V14.2041H0.179932V12.5232C0.179932 11.8456 0.590386 11.2397 1.4113 10.7055C2.2322 10.1712 3.13781 9.78683 4.12811 9.55228Z" />
+                     </svg>
+                     <span>My Account</span>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="header__content">
+         <div class="container">
+            <div class="header__content-row">
+               <a href="#" class="header__logo">
+                  <img src="assets/img/logo.png" alt="logo" width="240" height="73">
+               </a>
+               <div class="header__menu">
+                  <nav>
+                     <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Requirements</a></li>
+                        <li class="has-child">
+                           <a href="#">
+                              Classifications
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                 <path d="m6.5 8.5 6 7 6-7h-12z" />
+                              </svg></a>
+
+                        </li>
+                        <li><a href="#">Live Streaming Course</a></li>
+                        <li><a href="#">Home Study</a></li>
+                        <li><a href="#">Online Course<span>New</span></a></li>
+                        <li><a href="#">In-Class Prep</a></li>
+                        <li class="has-child">
+                           <a href="#">
+                              Services
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                 <path d="m6.5 8.5 6 7 6-7h-12z" />
+                              </svg>
+                           </a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+               <button class="header__btn">
+                  <div><span></span><span></span><span></span></div>
+               </button>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <div id="top"></div>
+
+   <main class="cstm-main">
+
+      <section class="head__section">
+         <div class="head__image">
+            <img src="assets/img/bg-head.jpg" alt="background image" width="375" height="257">
+         </div>
+         <div class="head__content">
+            <div class="container">
+               <div class="head__row">
+                  <div class="head__col">
+                     <h1 class="head__title">Get Your <b>Contractors License
+                           Faster</b> and <b>for Less</b></h1>
+                     <div class="head__buttons head__buttons_desktop">
+                        <button class="btn btn_accent">
+                           <div><span>Request More Info</span><span>Request More Info</span></div>
+                        </button>
+                        <button class="btn">
+                           <div><span>View Requirements</span><span>View Requirements</span></div>
+                        </button>
+                     </div>
+                  </div>
+                  <div class="head__col">
+                     <div class="head__info">
+                        <h2>You Can Be Licensed
+                           <br>in as Little as 2 Months
+                        </h2>
+                        <p>We help you with the CSLB application and we prepare you for the Contractors License Exam.
+                        </p>
+                        <p><b>We offer 100% Pass Exam Money-Back Guarantee.</b></p>
+                     </div>
+                  </div>
+                  <div class="head__buttons head__buttons_mobile">
+                     <button class="btn btn_accent">
+                        <div><span>Request <br>More Info</span><span>Request <br>More Info</span></div>
+                     </button>
+                     <button class="btn">
+                        <div><span>View <br>Requirements</span><span>View <br>Requirements</span></div>
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="presale__section">
+         <div class="container">
+            <div class="presale__row">
+               <div class="presale__col">
+                  <div class="presale__preview">
+                     <img src="assets/img/placeholder.webp" class="lazyload" data-src="assets/img/img-presale.jpg"
+                        alt="presale video" width="333" height="187">
+                     <div class="presale__play"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="24"
+                           fill="none" viewBox="0 0 16 24">
+                           <path fill="#fff" d="M15.472 12.185.062 23.962V.409l15.41 11.776Z" />
+                        </svg></div>
+                  </div>
+                  <button class="btn presale__btn_desktop">
+                     <div><span>Create Free
+                           Demo Account</span><span>Create Free
+                           Demo Account</span></div>
+                  </button>
+               </div>
+               <div class="presale__col">
+                  <div class="presale__content">
+                     <h2>Get Your <b>Contractors License
+                           Faster</b> and <b>for Less</b></h2>
+                     <p class="presale__subtitle">You Can Be Licensed in as Little as 2 Months</p>
+                     <article>
+                        <p>We help you with the CSLB application and we prepare you for the Contractors License Exam.
+                        </p>
+                        <p><b>We offer 100% Pass Exam Money-Back Guarantee if you don't pass your exam.</b></p>
+                     </article>
+                     <div class="presale__buttons">
+                        <button class="btn btn_accent">
+                           <div><span>Request <br>More Info</span><span>Request <br>More Info</span></div>
+                           <button class="btn presale__btn_mobile">
+                              <div><span>Create Free
+                                    <br>Demo Account</span><span>Create Free
+                                    <br>Demo Account</span></div>
+                           </button>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="study__section">
+         <div class="container">
+            <h2 class="h2 study__title">Study options</h2>
+            <div class="study__row">
+               <div class="study__item">
+                  <div class="study__item-label">Sale!</div>
+                  <div class="study__item-head">
+                     <div class="study__item-image">
+                        <img src="assets/img/placeholder.webp" class="lazyload" data-src="assets/img/img-study1.jpg"
+                           alt="study 1" width="232" height="134">
+                     </div>
+                  </div>
+                  <h3 class="study__item-title">Full Online Course</h3>
+                  <p class="study__item-text"><b>Law & Trade Course</b></p>
+                  <p class="study__item-price">$495.00</p>
+                  <p class="study__item-subprice">Regular Price: $595.00</p>
+                  <div class="study__item-buttons">
+                     <button class="btn btn_sm">
+                        <div><span>Enroll Now</span><span>Enroll Now</span></div>
+                     </button>
+                     <button class="btn btn_sm btn_neutral">
+                        <div><span>See Details</span><span>See Details</span></div>
+                     </button>
+                  </div>
+               </div>
+               <div class="study__item">
+                  <div class="study__item-head study__item-head_type-2">
+                     <div class="study__item-image">
+                        <img src="assets/img/placeholder.webp" class="lazyload" data-src="assets/img/img-study2.jpg"
+                           alt="study 2" width="272" height="163">
+                     </div>
+                  </div>
+                  <h3 class="study__item-title study__item-title_type-2">
+                     <div class="study__item-mark">
+                        <div></div>
+                     </div><b>Full Online Course</b> <br> <b>+</b> <br>
+                     <b>LIVE STREAMING</b> <span>CLASS</span>
+                  </h3>
+                  <p class="study__item-price study__item-price_type-2">$595.00</p>
+                  <div class="study__item-buttons">
+                     <button class="btn btn_sm">
+                        <div><span>Enroll Now</span><span>Enroll Now</span></div>
+                     </button>
+                     <button class="btn btn_sm btn_neutral">
+                        <div><span>See Details</span><span>See Details</span></div>
+                     </button>
+                  </div>
+               </div>
+               <div class="study__item">
+                  <div class="study__item-head study__item-head_type-3">
+                     <div class="study__item-image">
+                        <img src="assets/img/placeholder.webp" class="lazyload" data-src="assets/img/img-study3.jpg"
+                           alt="study 3" width="232" height="134">
+                     </div>
+                  </div>
+                  <h3 class="study__item-title study__item-title_type-3"><span>Traditional</span> <br> Home Study
+                  </h3>
+                  <p class="study__item-price study__item-price_type-3">$295.00</p>
+                  <div class="study__item-buttons">
+                     <button class="btn btn_sm">
+                        <div><span>Enroll Now</span><span>Enroll Now</span></div>
+                     </button>
+                     <button class="btn btn_sm btn_neutral">
+                        <div><span>See Details</span><span>See Details</span></div>
+                     </button>
+                  </div>
+               </div>
+               <div class="study__item">
+                  <div class="study__item-head study__item-head_type-4">
+                     <div class="study__item-image study__item-image_type-4">
+                        <img src="assets/img/placeholder.webp" class="lazyload" data-src="assets/img/img-study4.png"
+                           alt="study 4" width="159" height="200">
+                     </div>
+                  </div>
+                  <h3 class="study__item-title study__item-title_type-4">Live<br>
+                     <span>In-Class</span><br>
+                     Preparation
+                  </h3>
+                  <p class="study__item-text study__item-text_type-4">Our live classes are available
+                     throughout California. <br><br>Includes Study Material</p>
+                  <p class="study__item-price study__item-price_type-3">$545.00</p>
+                  <div class="study__item-buttons">
+                     <button class="btn btn_sm">
+                        <div><span>Enroll Now</span><span>Enroll Now</span></div>
+                     </button>
+                     <button class="btn btn_sm btn_neutral">
+                        <div><span>See Details</span><span>See Details</span></div>
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="audience__section">
+         <div class="container">
+            <h2 class="h2 audience__title">Who is this for?</h2>
+            <p class="audience__subtitle">Below are some common problems:</p>
+            <div class="audience__row">
+               <div class="audience__item">
+                  <img src="assets/img/img-audience1.svg" alt="audience icon 1" class="audience__item-icon" width="38"
+                     height="38">
+                  <h3 class="audience__item-title">Do you want to legally perform work over $500?</h3>
+                  <p class="audience__item-text">Are you looking to legally perform construction work that exceeds $500,
+                     including both labor and materials? Obtaining your California contractor’s license is the best
+                     investment for securing your future in the construction industry.</p>
+               </div>
+               <div class="audience__item">
+                  <img src="assets/img/img-audience2.svg" alt="audience icon 2" class="audience__item-icon" width="38"
+                     height="38">
+                  <h3 class="audience__item-title">Are you an experienced journeyman?</h3>
+                  <p class="audience__item-text">Do you have 4 years of journeyman level experience in the trade and
+                     aspire to start a solo career? We can help you obtain your contractor’s license in as little as two
+                     months, empowering you to work independently.</p>
+               </div>
+               <div class="audience__item">
+                  <img src="assets/img/img-audience3.svg" alt="audience icon 3" class="audience__item-icon" width="38"
+                     height="38">
+                  <h3 class="audience__item-title">Are you skilled in your trade but dislike dealing with the paperwork?
+                  </h3>
+                  <p class="audience__item-text">Our program guides you through the application process, letting you
+                     focus on your craft while we handle the bureaucratic details.</p>
+               </div>
+               <div class="audience__item">
+                  <img src="assets/img/img-audience4.svg" alt="audience icon 4" class="audience__item-icon" width="38"
+                     height="38">
+                  <h3 class="audience__item-title">Dreaming of starting your own construction company?</h3>
+                  <p class="audience__item-text">A contractor’s license is essential and in most cases required. We
+                     offer the resources and guidance to help you launch your business successfully. Make it official
+                     and enhance your credibility by obtaining your license through our proven preparation courses.</p>
+               </div>
+               <div class="audience__item">
+                  <img src="assets/img/img-audience5.svg" alt="audience icon 5" class="audience__item-icon" width="38"
+                     height="38">
+                  <h3 class="audience__item-title">Have you been doing construction work for a while without a license?
+                  </h3>
+                  <p class="audience__item-text">The CSLB accepts self-employment experience, provided you have the
+                     paper trail to prove at least 4  years. </p>
+               </div>
+               <div class="audience__item">
+                  <img src="assets/img/img-audience6.svg" alt="audience icon 6" class="audience__item-icon" width="38"
+                     height="38">
+                  <h3 class="audience__item-title">Do you want to add a classification to your existing contractors
+                     license?</h3>
+                  <p class="audience__item-text">Our program will guide you through adding a classification to your
+                     current contractor's license, helping you expand your scope of work.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="advisory__section">
+         <div class="container">
+            <div class="advisory__row">
+               <div class="advisory__col">
+                  <h2 class="h2 advisory__title">Get Licensed in as Little as 2 Months</h2>
+                  <p class="advisory__text">We guide you from start to finish, assisting with preparing and submitting
+                     your license application. <b>Our comprehensive materials ensure you're fully prepared for the
+                        contractor's licensing exam.</b> Explore our courses below or contact one of our representatives
+                     today
+                     to begin your journey.</p>
+                  <div class="advisory__author">
+                     <figure class="advisory__author-image">
+                        <img src="assets/img/placeholder.webp" class="lazyload" alt="advisory author"
+                           data-src="assets/img/img-advisory-author.jpg" width="78" height="78">
+                     </figure>
+                     <p class="advisory__author-details">
+                        <b>Hector Garcia</b><br>
+                        Course Instructor
+                     </p>
+                  </div>
+               </div>
+               <div class="advisory__col">
+                  <div class="advisory__preview">
+                     <img src="assets/img/placeholder.webp" class="lazyload" data-src="assets/img/img-advisory.jpg"
+                        alt="advisory video" width="333" height="187">
+                     <div class="advisory__play"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="24"
+                           fill="none" viewBox="0 0 16 24">
+                           <path fill="#fff" d="M15.472 12.185.062 23.962V.409l15.41 11.776Z" />
+                        </svg></div>
+                  </div>
+                  <button class="btn advisory__btn">
+                     <div><span>Create Free
+                           Demo Account</span><span>Create Free
+                           Demo Account</span></div>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="reviews__section">
+         <div class="container">
+            <p class="reviews__pretitle">featured review</p>
+            <h2 class="h2 reviews__title">Our satisfied clients</h2>
+            <div class="reviews__slider-wrapper">
+               <div class="reviews__slider swiper">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide">
+                        <div class="reviews__item">
+                           <a href="#" class="reviews__item-head">
+                              <figure class="reviews__item-avatar">
+                                 <img src="assets/img/placeholder.webp" class="lazyload"
+                                    data-src="assets/img/img-reviews1.jpg" alt="reviews 1" width="40" height="40">
+                              </figure>
+                              <div class="reviews__item-info">
+                                 <p class="reviews__item-name">Sanjeev Dhewant <svg xmlns="http://www.w3.org/2000/svg"
+                                       width="15" height="14" fill="none" viewBox="0 0 15 14">
+                                       <path fill="#197BFF"
+                                          d="M7.427.236a.35.35 0 0 1 .486 0l1.106 1.07a.35.35 0 0 0 .33.089l1.492-.375a.35.35 0 0 1 .422.244l.422 1.48a.351.351 0 0 0 .24.24l1.481.423a.35.35 0 0 1 .244.422l-.375 1.493a.35.35 0 0 0 .088.329l1.071 1.106a.35.35 0 0 1 0 .486l-1.07 1.106a.35.35 0 0 0-.089.33l.375 1.492a.35.35 0 0 1-.244.422l-1.48.422a.35.35 0 0 0-.24.24l-.423 1.481a.35.35 0 0 1-.422.244l-1.493-.375a.35.35 0 0 0-.329.088l-1.106 1.071a.35.35 0 0 1-.486 0l-1.106-1.07a.35.35 0 0 0-.329-.089L4.5 12.98a.35.35 0 0 1-.422-.244l-.422-1.48a.35.35 0 0 0-.24-.24l-1.48-.423a.35.35 0 0 1-.245-.422l.375-1.493a.35.35 0 0 0-.088-.329L.907 7.243a.35.35 0 0 1 0-.486l1.07-1.106a.35.35 0 0 0 .088-.329L1.69 3.829a.35.35 0 0 1 .244-.422l1.48-.422a.35.35 0 0 0 .24-.24l.423-1.481A.35.35 0 0 1 4.5 1.02l1.493.375a.35.35 0 0 0 .33-.088L7.426.236Z" />
+                                       <path fill="#fff" fill-rule="evenodd"
+                                          d="M9.735 4.85a.644.644 0 0 1 .9 0 .615.615 0 0 1 .052.823l-.053.06L7.15 9.15a.645.645 0 0 1-.84.052l-.06-.052-1.66-1.527a.616.616 0 0 1 0-.882.645.645 0 0 1 .84-.052l.06.052L6.7 7.827 9.734 4.85l.001.001Z"
+                                          clip-rule="evenodd" />
+                                    </svg></p>
+                                 <p class="reviews__item-date">5 days ago</p>
+                              </div>
+                           </a>
+                           <div class="reviews__item-rating">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                           </div>
+                           <div class="reviews__item-content">
+                              <div class="reviews__item-text">
+                                 <p>I have very good experience with
+                                    Contractor license school. Miriam
+                                    Curiel is the one who always</p>
+                              </div>
+                              <button class="reviews__item-btn"><span>Read more</span><span>Hide</span></button>
+                           </div>
+                           <a href="#" class="reviews__item-company">
+                              <img src="assets/img/icon-reviews.svg" alt="reviews company" width="75" height="32">
+                           </a>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="reviews__item">
+                           <a href="#" class="reviews__item-head">
+                              <figure class="reviews__item-avatar">
+                                 <img src="assets/img/placeholder.webp" class="lazyload"
+                                    data-src="assets/img/img-reviews2.jpg" alt="reviews 2" width="40" height="40">
+                              </figure>
+                              <div class="reviews__item-info">
+                                 <p class="reviews__item-name">Andrew Thorry <svg xmlns="http://www.w3.org/2000/svg"
+                                       width="15" height="14" fill="none" viewBox="0 0 15 14">
+                                       <path fill="#197BFF"
+                                          d="M7.427.236a.35.35 0 0 1 .486 0l1.106 1.07a.35.35 0 0 0 .33.089l1.492-.375a.35.35 0 0 1 .422.244l.422 1.48a.351.351 0 0 0 .24.24l1.481.423a.35.35 0 0 1 .244.422l-.375 1.493a.35.35 0 0 0 .088.329l1.071 1.106a.35.35 0 0 1 0 .486l-1.07 1.106a.35.35 0 0 0-.089.33l.375 1.492a.35.35 0 0 1-.244.422l-1.48.422a.35.35 0 0 0-.24.24l-.423 1.481a.35.35 0 0 1-.422.244l-1.493-.375a.35.35 0 0 0-.329.088l-1.106 1.071a.35.35 0 0 1-.486 0l-1.106-1.07a.35.35 0 0 0-.329-.089L4.5 12.98a.35.35 0 0 1-.422-.244l-.422-1.48a.35.35 0 0 0-.24-.24l-1.48-.423a.35.35 0 0 1-.245-.422l.375-1.493a.35.35 0 0 0-.088-.329L.907 7.243a.35.35 0 0 1 0-.486l1.07-1.106a.35.35 0 0 0 .088-.329L1.69 3.829a.35.35 0 0 1 .244-.422l1.48-.422a.35.35 0 0 0 .24-.24l.423-1.481A.35.35 0 0 1 4.5 1.02l1.493.375a.35.35 0 0 0 .33-.088L7.426.236Z" />
+                                       <path fill="#fff" fill-rule="evenodd"
+                                          d="M9.735 4.85a.644.644 0 0 1 .9 0 .615.615 0 0 1 .052.823l-.053.06L7.15 9.15a.645.645 0 0 1-.84.052l-.06-.052-1.66-1.527a.616.616 0 0 1 0-.882.645.645 0 0 1 .84-.052l.06.052L6.7 7.827 9.734 4.85l.001.001Z"
+                                          clip-rule="evenodd" />
+                                    </svg></p>
+                                 <p class="reviews__item-date">9 days ago</p>
+                              </div>
+                           </a>
+                           <div class="reviews__item-rating">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                           </div>
+                           <div class="reviews__item-content">
+                              <div class="reviews__item-text">
+                                 <p>The best of 3. My company offered
+                                    to pay for whatever schooling I
+                                    wanted. I got 3 to CMA. The other</p>
+                              </div>
+                              <button class="reviews__item-btn"><span>Read more</span><span>Hide</span></button>
+                           </div>
+                           <a href="#" class="reviews__item-company">
+                              <img src="assets/img/icon-reviews.svg" alt="reviews company" width="75" height="32">
+                           </a>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="reviews__item">
+                           <a href="#" class="reviews__item-head">
+                              <figure class="reviews__item-avatar">
+                                 <img src="assets/img/placeholder.webp" class="lazyload"
+                                    data-src="assets/img/img-reviews3.jpg" alt="reviews 3" width="40" height="40">
+                              </figure>
+                              <div class="reviews__item-info">
+                                 <p class="reviews__item-name">Eric Burns <svg xmlns="http://www.w3.org/2000/svg"
+                                       width="15" height="14" fill="none" viewBox="0 0 15 14">
+                                       <path fill="#197BFF"
+                                          d="M7.427.236a.35.35 0 0 1 .486 0l1.106 1.07a.35.35 0 0 0 .33.089l1.492-.375a.35.35 0 0 1 .422.244l.422 1.48a.351.351 0 0 0 .24.24l1.481.423a.35.35 0 0 1 .244.422l-.375 1.493a.35.35 0 0 0 .088.329l1.071 1.106a.35.35 0 0 1 0 .486l-1.07 1.106a.35.35 0 0 0-.089.33l.375 1.492a.35.35 0 0 1-.244.422l-1.48.422a.35.35 0 0 0-.24.24l-.423 1.481a.35.35 0 0 1-.422.244l-1.493-.375a.35.35 0 0 0-.329.088l-1.106 1.071a.35.35 0 0 1-.486 0l-1.106-1.07a.35.35 0 0 0-.329-.089L4.5 12.98a.35.35 0 0 1-.422-.244l-.422-1.48a.35.35 0 0 0-.24-.24l-1.48-.423a.35.35 0 0 1-.245-.422l.375-1.493a.35.35 0 0 0-.088-.329L.907 7.243a.35.35 0 0 1 0-.486l1.07-1.106a.35.35 0 0 0 .088-.329L1.69 3.829a.35.35 0 0 1 .244-.422l1.48-.422a.35.35 0 0 0 .24-.24l.423-1.481A.35.35 0 0 1 4.5 1.02l1.493.375a.35.35 0 0 0 .33-.088L7.426.236Z" />
+                                       <path fill="#fff" fill-rule="evenodd"
+                                          d="M9.735 4.85a.644.644 0 0 1 .9 0 .615.615 0 0 1 .052.823l-.053.06L7.15 9.15a.645.645 0 0 1-.84.052l-.06-.052-1.66-1.527a.616.616 0 0 1 0-.882.645.645 0 0 1 .84-.052l.06.052L6.7 7.827 9.734 4.85l.001.001Z"
+                                          clip-rule="evenodd" />
+                                    </svg></p>
+                                 <p class="reviews__item-date">16 days ago</p>
+                              </div>
+                           </a>
+                           <div class="reviews__item-rating">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                           </div>
+                           <div class="reviews__item-content">
+                              <div class="reviews__item-text">
+                                 <p>Amazing school, never missed a
+                                    beat, and was always there when I
+                                    need direction through the</p>
+                              </div>
+                              <button class="reviews__item-btn"><span>Read more</span><span>Hide</span></button>
+                           </div>
+                           <a href="#" class="reviews__item-company">
+                              <img src="assets/img/icon-reviews.svg" alt="reviews company" width="75" height="32">
+                           </a>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="reviews__item">
+                           <a href="#" class="reviews__item-head">
+                              <figure class="reviews__item-avatar">
+                                 <img src="assets/img/placeholder.webp" class="lazyload"
+                                    data-src="assets/img/img-reviews4.jpg" alt="reviews 4" width="40" height="40">
+                              </figure>
+                              <div class="reviews__item-info">
+                                 <p class="reviews__item-name">Kevin Garcia <svg xmlns="http://www.w3.org/2000/svg"
+                                       width="15" height="14" fill="none" viewBox="0 0 15 14">
+                                       <path fill="#197BFF"
+                                          d="M7.427.236a.35.35 0 0 1 .486 0l1.106 1.07a.35.35 0 0 0 .33.089l1.492-.375a.35.35 0 0 1 .422.244l.422 1.48a.351.351 0 0 0 .24.24l1.481.423a.35.35 0 0 1 .244.422l-.375 1.493a.35.35 0 0 0 .088.329l1.071 1.106a.35.35 0 0 1 0 .486l-1.07 1.106a.35.35 0 0 0-.089.33l.375 1.492a.35.35 0 0 1-.244.422l-1.48.422a.35.35 0 0 0-.24.24l-.423 1.481a.35.35 0 0 1-.422.244l-1.493-.375a.35.35 0 0 0-.329.088l-1.106 1.071a.35.35 0 0 1-.486 0l-1.106-1.07a.35.35 0 0 0-.329-.089L4.5 12.98a.35.35 0 0 1-.422-.244l-.422-1.48a.35.35 0 0 0-.24-.24l-1.48-.423a.35.35 0 0 1-.245-.422l.375-1.493a.35.35 0 0 0-.088-.329L.907 7.243a.35.35 0 0 1 0-.486l1.07-1.106a.35.35 0 0 0 .088-.329L1.69 3.829a.35.35 0 0 1 .244-.422l1.48-.422a.35.35 0 0 0 .24-.24l.423-1.481A.35.35 0 0 1 4.5 1.02l1.493.375a.35.35 0 0 0 .33-.088L7.426.236Z" />
+                                       <path fill="#fff" fill-rule="evenodd"
+                                          d="M9.735 4.85a.644.644 0 0 1 .9 0 .615.615 0 0 1 .052.823l-.053.06L7.15 9.15a.645.645 0 0 1-.84.052l-.06-.052-1.66-1.527a.616.616 0 0 1 0-.882.645.645 0 0 1 .84-.052l.06.052L6.7 7.827 9.734 4.85l.001.001Z"
+                                          clip-rule="evenodd" />
+                                    </svg></p>
+                                 <p class="reviews__item-date">16 days ago</p>
+                              </div>
+                           </a>
+                           <div class="reviews__item-rating">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                           </div>
+                           <div class="reviews__item-content">
+                              <div class="reviews__item-text">
+                                 <p>I took the online study course for
+                                    3-39 license. I just passed my Trade
+                                    exam yesterday and my law exam</p>
+                              </div>
+                              <button class="reviews__item-btn"><span>Read more</span><span>Hide</span></button>
+                           </div>
+                           <a href="#" class="reviews__item-company">
+                              <img src="assets/img/icon-reviews.svg" alt="reviews company" width="75" height="32">
+                           </a>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="reviews__item">
+                           <a href="#" class="reviews__item-head">
+                              <figure class="reviews__item-avatar">
+                                 <img src="assets/img/placeholder.webp" class="lazyload"
+                                    data-src="assets/img/img-reviews1.jpg" alt="reviews 1" width="40" height="40">
+                              </figure>
+                              <div class="reviews__item-info">
+                                 <p class="reviews__item-name">Sanjeev Dhewant <svg xmlns="http://www.w3.org/2000/svg"
+                                       width="15" height="14" fill="none" viewBox="0 0 15 14">
+                                       <path fill="#197BFF"
+                                          d="M7.427.236a.35.35 0 0 1 .486 0l1.106 1.07a.35.35 0 0 0 .33.089l1.492-.375a.35.35 0 0 1 .422.244l.422 1.48a.351.351 0 0 0 .24.24l1.481.423a.35.35 0 0 1 .244.422l-.375 1.493a.35.35 0 0 0 .088.329l1.071 1.106a.35.35 0 0 1 0 .486l-1.07 1.106a.35.35 0 0 0-.089.33l.375 1.492a.35.35 0 0 1-.244.422l-1.48.422a.35.35 0 0 0-.24.24l-.423 1.481a.35.35 0 0 1-.422.244l-1.493-.375a.35.35 0 0 0-.329.088l-1.106 1.071a.35.35 0 0 1-.486 0l-1.106-1.07a.35.35 0 0 0-.329-.089L4.5 12.98a.35.35 0 0 1-.422-.244l-.422-1.48a.35.35 0 0 0-.24-.24l-1.48-.423a.35.35 0 0 1-.245-.422l.375-1.493a.35.35 0 0 0-.088-.329L.907 7.243a.35.35 0 0 1 0-.486l1.07-1.106a.35.35 0 0 0 .088-.329L1.69 3.829a.35.35 0 0 1 .244-.422l1.48-.422a.35.35 0 0 0 .24-.24l.423-1.481A.35.35 0 0 1 4.5 1.02l1.493.375a.35.35 0 0 0 .33-.088L7.426.236Z" />
+                                       <path fill="#fff" fill-rule="evenodd"
+                                          d="M9.735 4.85a.644.644 0 0 1 .9 0 .615.615 0 0 1 .052.823l-.053.06L7.15 9.15a.645.645 0 0 1-.84.052l-.06-.052-1.66-1.527a.616.616 0 0 1 0-.882.645.645 0 0 1 .84-.052l.06.052L6.7 7.827 9.734 4.85l.001.001Z"
+                                          clip-rule="evenodd" />
+                                    </svg></p>
+                                 <p class="reviews__item-date">5 days ago</p>
+                              </div>
+                           </a>
+                           <div class="reviews__item-rating">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                           </div>
+                           <div class="reviews__item-content">
+                              <div class="reviews__item-text">
+                                 <p>I have very good experience with
+                                    Contractor license school. Miriam
+                                    Curiel is the one who always</p>
+                              </div>
+                              <button class="reviews__item-btn"><span>Read more</span><span>Hide</span></button>
+                           </div>
+                           <a href="#" class="reviews__item-company">
+                              <img src="assets/img/icon-reviews.svg" alt="reviews company" width="75" height="32">
+                           </a>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="reviews__item">
+                           <a href="#" class="reviews__item-head">
+                              <figure class="reviews__item-avatar">
+                                 <img src="assets/img/placeholder.webp" class="lazyload"
+                                    data-src="assets/img/img-reviews2.jpg" alt="reviews 2" width="40" height="40">
+                              </figure>
+                              <div class="reviews__item-info">
+                                 <p class="reviews__item-name">Andrew Thorry <svg xmlns="http://www.w3.org/2000/svg"
+                                       width="15" height="14" fill="none" viewBox="0 0 15 14">
+                                       <path fill="#197BFF"
+                                          d="M7.427.236a.35.35 0 0 1 .486 0l1.106 1.07a.35.35 0 0 0 .33.089l1.492-.375a.35.35 0 0 1 .422.244l.422 1.48a.351.351 0 0 0 .24.24l1.481.423a.35.35 0 0 1 .244.422l-.375 1.493a.35.35 0 0 0 .088.329l1.071 1.106a.35.35 0 0 1 0 .486l-1.07 1.106a.35.35 0 0 0-.089.33l.375 1.492a.35.35 0 0 1-.244.422l-1.48.422a.35.35 0 0 0-.24.24l-.423 1.481a.35.35 0 0 1-.422.244l-1.493-.375a.35.35 0 0 0-.329.088l-1.106 1.071a.35.35 0 0 1-.486 0l-1.106-1.07a.35.35 0 0 0-.329-.089L4.5 12.98a.35.35 0 0 1-.422-.244l-.422-1.48a.35.35 0 0 0-.24-.24l-1.48-.423a.35.35 0 0 1-.245-.422l.375-1.493a.35.35 0 0 0-.088-.329L.907 7.243a.35.35 0 0 1 0-.486l1.07-1.106a.35.35 0 0 0 .088-.329L1.69 3.829a.35.35 0 0 1 .244-.422l1.48-.422a.35.35 0 0 0 .24-.24l.423-1.481A.35.35 0 0 1 4.5 1.02l1.493.375a.35.35 0 0 0 .33-.088L7.426.236Z" />
+                                       <path fill="#fff" fill-rule="evenodd"
+                                          d="M9.735 4.85a.644.644 0 0 1 .9 0 .615.615 0 0 1 .052.823l-.053.06L7.15 9.15a.645.645 0 0 1-.84.052l-.06-.052-1.66-1.527a.616.616 0 0 1 0-.882.645.645 0 0 1 .84-.052l.06.052L6.7 7.827 9.734 4.85l.001.001Z"
+                                          clip-rule="evenodd" />
+                                    </svg></p>
+                                 <p class="reviews__item-date">9 days ago</p>
+                              </div>
+                           </a>
+                           <div class="reviews__item-rating">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                           </div>
+                           <div class="reviews__item-content">
+                              <div class="reviews__item-text">
+                                 <p>The best of 3. My company offered
+                                    to pay for whatever schooling I
+                                    wanted. I got 3 to CMA. The other</p>
+                              </div>
+                              <button class="reviews__item-btn"><span>Read more</span><span>Hide</span></button>
+                           </div>
+                           <a href="#" class="reviews__item-company">
+                              <img src="assets/img/icon-reviews.svg" alt="reviews company" width="75" height="32">
+                           </a>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="reviews__item">
+                           <a href="#" class="reviews__item-head">
+                              <figure class="reviews__item-avatar">
+                                 <img src="assets/img/placeholder.webp" class="lazyload"
+                                    data-src="assets/img/img-reviews3.jpg" alt="reviews 3" width="40" height="40">
+                              </figure>
+                              <div class="reviews__item-info">
+                                 <p class="reviews__item-name">Eric Burns <svg xmlns="http://www.w3.org/2000/svg"
+                                       width="15" height="14" fill="none" viewBox="0 0 15 14">
+                                       <path fill="#197BFF"
+                                          d="M7.427.236a.35.35 0 0 1 .486 0l1.106 1.07a.35.35 0 0 0 .33.089l1.492-.375a.35.35 0 0 1 .422.244l.422 1.48a.351.351 0 0 0 .24.24l1.481.423a.35.35 0 0 1 .244.422l-.375 1.493a.35.35 0 0 0 .088.329l1.071 1.106a.35.35 0 0 1 0 .486l-1.07 1.106a.35.35 0 0 0-.089.33l.375 1.492a.35.35 0 0 1-.244.422l-1.48.422a.35.35 0 0 0-.24.24l-.423 1.481a.35.35 0 0 1-.422.244l-1.493-.375a.35.35 0 0 0-.329.088l-1.106 1.071a.35.35 0 0 1-.486 0l-1.106-1.07a.35.35 0 0 0-.329-.089L4.5 12.98a.35.35 0 0 1-.422-.244l-.422-1.48a.35.35 0 0 0-.24-.24l-1.48-.423a.35.35 0 0 1-.245-.422l.375-1.493a.35.35 0 0 0-.088-.329L.907 7.243a.35.35 0 0 1 0-.486l1.07-1.106a.35.35 0 0 0 .088-.329L1.69 3.829a.35.35 0 0 1 .244-.422l1.48-.422a.35.35 0 0 0 .24-.24l.423-1.481A.35.35 0 0 1 4.5 1.02l1.493.375a.35.35 0 0 0 .33-.088L7.426.236Z" />
+                                       <path fill="#fff" fill-rule="evenodd"
+                                          d="M9.735 4.85a.644.644 0 0 1 .9 0 .615.615 0 0 1 .052.823l-.053.06L7.15 9.15a.645.645 0 0 1-.84.052l-.06-.052-1.66-1.527a.616.616 0 0 1 0-.882.645.645 0 0 1 .84-.052l.06.052L6.7 7.827 9.734 4.85l.001.001Z"
+                                          clip-rule="evenodd" />
+                                    </svg></p>
+                                 <p class="reviews__item-date">16 days ago</p>
+                              </div>
+                           </a>
+                           <div class="reviews__item-rating">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#FCBF02"
+                                    d="m8.777 14.711-4.218 2.217a.644.644 0 0 1-.932-.68l.806-4.692a.643.643 0 0 0-.185-.57L.836 7.661a.643.643 0 0 1 .356-1.096l4.713-.686a.643.643 0 0 0 .485-.35L8.5 1.256a.643.643 0 0 1 1.152 0l2.11 4.27a.644.644 0 0 0 .483.351l4.713.685a.643.643 0 0 1 .357 1.097l-3.411 3.325a.643.643 0 0 0-.186.568l.807 4.694a.642.642 0 0 1-.934.68L9.374 14.71a.643.643 0 0 0-.598 0v.001Z" />
+                              </svg>
+                           </div>
+                           <div class="reviews__item-content">
+                              <div class="reviews__item-text">
+                                 <p>Amazing school, never missed a
+                                    beat, and was always there when I
+                                    need direction through the</p>
+                              </div>
+                              <button class="reviews__item-btn"><span>Read more</span><span>Hide</span></button>
+                           </div>
+                           <a href="#" class="reviews__item-company">
+                              <img src="assets/img/icon-reviews.svg" alt="reviews company" width="75" height="32">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="reviews__pagination"></div>
+               <div class="reviews__button-prev swiper-button-prev"></div>
+               <div class="reviews__button-next swiper-button-next"></div>
+            </div>
+         </div>
+      </section>
+
+      <section class="achievements__section">
+         <div class="container">
+            <h2 class="h2 achievements__title">California #1 Contractors License School</h2>
+            <p class="achievements__subtitle">Each year, thousands choose Contractors Intelligence School to obtain
+               their California Contractors License. Contractors Intelligence School has the highest success rate of all
+               the California contractors license exam schools. We offer full comprehensive <a href="#">online
+                  courses</a>, <a href="#">home-study</a>,
+               and <a href="#">in-class preparation</a>.</p>
+            <div class="achievements__row">
+               <div class="achievements__item">
+                  <figure class="achievements__item-icon">
+                     <img src="assets/img/placeholder.webp" class="lazyload" alt="achievements 1"
+                        data-src="assets/img/icon-achievements1.svg" width="92" height="92">
+                  </figure>
+                  <div class="achievements__item-content">
+                     <h3 class="achievements__item-title">98% success rate</h3>
+                     <p class="achievements__item-text">With our proven methods boasting a 98% success rate, we stand as
+                        the
+                        premier choice for contractor licensing.</p>
+                  </div>
+               </div>
+               <div class="achievements__item">
+                  <figure class="achievements__item-icon">
+                     <img src="assets/img/placeholder.webp" class="lazyload" alt="achievements 2"
+                        data-src="assets/img/icon-achievements2.svg" width="86" height="86">
+                  </figure>
+                  <div class="achievements__item-content">
+                     <h3 class="achievements__item-title">Interactive exam preparation</h3>
+                     <p class="achievements__item-text">Engage with our interactive exam preparation tools, designed to
+                        enhance your learning experience and readiness.</p>
+                  </div>
+               </div>
+               <div class="achievements__item">
+                  <figure class="achievements__item-icon">
+                     <img src="assets/img/placeholder.webp" class="lazyload" alt="achievements 3"
+                        data-src="assets/img/icon-achievements3.svg" width="81" height="88">
+                  </figure>
+                  <div class="achievements__item-content">
+                     <h3 class="achievements__item-title">Intelligent Tracker</h3>
+                     <p class="achievements__item-text">Monitor your progress with our Intelligent Tracker, keeping you
+                        on
+                        track with your studies and practice exams.</p>
+                  </div>
+               </div>
+               <div class="achievements__item">
+                  <figure class="achievements__item-icon">
+                     <img src="assets/img/placeholder.webp" class="lazyload" alt="achievements 4"
+                        data-src="assets/img/icon-achievements4.svg" width="97" height="97">
+                  </figure>
+                  <div class="achievements__item-content">
+                     <h3 class="achievements__item-title">We offer a 100% pass exam guarantee</h3>
+                     <p class="achievements__item-text">We offer a 100% pass exam money-back guarantee, reflecting our
+                        confidence in your success and our commitment to your future.</p>
+                  </div>
+               </div>
+               <div class="achievements__item">
+                  <figure class="achievements__item-icon">
+                     <img src="assets/img/placeholder.webp" class="lazyload" alt="achievements 5"
+                        data-src="assets/img/icon-achievements5.svg" width="102" height="102">
+                  </figure>
+                  <div class="achievements__item-content">
+                     <h3 class="achievements__item-title">Join Our Community</h3>
+                     <p class="achievements__item-text">Become part of a thriving community of successful contractors
+                        who
+                        have achieved their licenses through our school.</p>
+                  </div>
+               </div>
+               <div class="achievements__item">
+                  <figure class="achievements__item-icon">
+                     <img src="assets/img/placeholder.webp" class="lazyload" alt="achievements 6"
+                        data-src="assets/img/icon-achievements6.svg" width="110" height="110">
+                  </figure>
+                  <div class="achievements__item-content">
+                     <h3 class="achievements__item-title">Fast Track Your Career</h3>
+                     <p class="achievements__item-text">Fast track your career dreams with our comprehensive and
+                        efficient
+                        licensing preparation programs.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="quote__section">
+         <div class="container">
+            <div class="quote__row">
+               <div class="quote__col">
+                  <blockquote class="quote__element">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="42" height="36" fill="none" viewBox="0 0 42 36">
+                        <path fill="#fff"
+                           d="M42 0c-3.928 10.43-6.799 21.924-8.611 34.481L21 36c2.014-7.494 4.13-14.127 6.345-19.899C29.561 10.228 31.928 5.114 34.446.76L42 0ZM20.849 0c-3.727 10.43-6.597 21.924-8.612 34.481L0 36c2.014-7.494 4.13-14.127 6.345-19.899C8.561 10.228 10.928 5.114 13.446.76L20.849 0Z" />
+                     </svg>
+                     <p class="quote__element-text">You guys prepared us properly, gave us all the right information,
+                        and that's what helped me pass
+                        it the first time. The experience that you guys have here helped me go through the process a lot
+                        quicker than I expected. This is the best contractor school out here.</p>
+                     <div class="quote__element-author">
+                        <figure class="quote__element-avatar">
+                           <img src="assets/img/placeholder.webp" class="lazyload" data-src="assets/img/img-quote.jpg"
+                              alt="quote 1" width="78" height="78">
+                        </figure>
+                        <p class="quote__element-name"><b>Will</b><br>
+                           successful graduate </p>
+                     </div>
+                  </blockquote>
+               </div>
+               <div class="quote__col">
+                  <h2 class="h2 quote__title">Get Licensed in as <br>Little as 2 Months</h2>
+                  <p class="quote__text">Ready to transform your career in as little as two months? We assist you from
+                     start to finish with your license application and exam preparation. Our resources are tailored to
+                     ensure you pass the exam on your first attempt.</p>
+                  <button class="btn quote__btn">
+                     <div><span>Create Free Demo Account</span><span>Create Free Demo Account</span></div>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="app__section">
+         <div class="container">
+            <p class="app__pretitle">Compatible with over 8,000 devices</p>
+            <h2 class="h2 app__title">Exclusive Mobile App</h2>
+            <p class="app__text">Upon purchasing our courses, you will have FULL ACCESS to the course through our
+               exclusive mobile app. You can stream videos, listen to audio, reading course materials, as well as take
+               practice exams.</p>
+            <figure class="app__image">
+               <img src="assets/img/placeholder.webp" class="lazyload" data-src="assets/img/img-app.png" alt="app"
+                  width="304" height="279">
+            </figure>
+            <div class="app__buttons">
+               <a href="https://play.google.com/store/apps/details?id=com.contractorsintelligence.cis"
+                  target="_blank"><img src="assets/img/placeholder.webp" class="lazyload"
+                     data-src="assets/img/icon-app1.svg" alt="app 1" width="142" height="43"></a>
+               <a href="https://itunes.apple.com/us/app/keynote/id945965672?mt=8" target="_blank"><img
+                     src="assets/img/placeholder.webp" class="lazyload" data-src="assets/img/icon-app2.svg" alt="app 1"
+                     width="142" height="43"></a>
+            </div>
+         </div>
+      </section>
+
+      <section class="contact__section">
+         <div class="container">
+            <div class="contact__row">
+               <div class="contact__col">
+                  <p class="contact__pretitle">Contact us</p>
+                  <h2 class="contact__title h2">Get Licensed Faster and for Less!</h2>
+               </div>
+               <div class="contact__col">
+                  <a href="#" class="btn btn_neutral contact__btn">
+                     <div>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="26" fill="currentColor"
+                              viewBox="0 0 18 26">
+                              <path fill="#fff"
+                                 d="M3.61 11.814c1.468 2.883 3.671 5.07 6.609 6.557l2.203-2.185c.281-.31.625-.388 1.031-.233 1.125.372 2.313.558 3.563.558.25 0 .476.093.68.28a.907.907 0 0 1 .304.697v3.487c0 .248-.102.473-.305.675-.203.201-.43.302-.68.302-3.093 0-5.945-.752-8.554-2.256a16.725 16.725 0 0 1-6.188-6.138C.758 10.97 0 8.141 0 5.071c0-.248.102-.472.305-.674.203-.201.43-.302.68-.302H4.5c.281 0 .516.1.703.302a.967.967 0 0 1 .281.674c0 1.24.188 2.418.563 3.535.125.403.047.744-.234 1.023l-2.204 2.185Z" />
+                           </svg>1-800-425-7570</span>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="26" fill="currentColor"
+                              viewBox="0 0 18 26">
+                              <path fill="#fff"
+                                 d="M3.61 11.814c1.468 2.883 3.671 5.07 6.609 6.557l2.203-2.185c.281-.31.625-.388 1.031-.233 1.125.372 2.313.558 3.563.558.25 0 .476.093.68.28a.907.907 0 0 1 .304.697v3.487c0 .248-.102.473-.305.675-.203.201-.43.302-.68.302-3.093 0-5.945-.752-8.554-2.256a16.725 16.725 0 0 1-6.188-6.138C.758 10.97 0 8.141 0 5.071c0-.248.102-.472.305-.674.203-.201.43-.302.68-.302H4.5c.281 0 .516.1.703.302a.967.967 0 0 1 .281.674c0 1.24.188 2.418.563 3.535.125.403.047.744-.234 1.023l-2.204 2.185Z" />
+                           </svg>1-800-425-7570</span>
+                     </div>
+                  </a>
+               </div>
+               <div class="contact__col">
+                  <figure class="contact__image">
+                     <img src="assets/img/placeholder.webp" alt="contact" class="lazyload"
+                        data-src="assets/img/img-contact.png" width="371" height="353">
+                  </figure>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="guides__section">
+         <div class="container">
+            <h2 class="h2 guides__title">Meet Your Guides Who are Here to Help You
+               <br>Fast Track Your Licensing and Career Goals
+            </h2>
+            <div class="guides__row">
+               <div class="guides__item">
+                  <figure class="guides__item-image">
+                     <img src="assets/img/placeholder.webp" alt="guides" class="lazyload"
+                        data-src="assets/img/img-guides.jpg" width="149" height="149">
+                  </figure>
+                  <p class="guides__item-info"><b>Name,</b><br>
+                     Position</p>
+               </div>
+               <div class="guides__item">
+                  <figure class="guides__item-image">
+                     <img src="assets/img/placeholder.webp" alt="guides" class="lazyload"
+                        data-src="assets/img/img-guides.jpg" width="149" height="149">
+                  </figure>
+                  <p class="guides__item-info"><b>Name,</b><br>
+                     Position</p>
+               </div>
+               <div class="guides__item">
+                  <figure class="guides__item-image">
+                     <img src="assets/img/placeholder.webp" alt="guides" class="lazyload"
+                        data-src="assets/img/img-guides.jpg" width="149" height="149">
+                  </figure>
+                  <p class="guides__item-info"><b>Name,</b><br>
+                     Position</p>
+               </div>
+               <div class="guides__item">
+                  <figure class="guides__item-image">
+                     <img src="assets/img/placeholder.webp" alt="guides" class="lazyload"
+                        data-src="assets/img/img-guides.jpg" width="149" height="149">
+                  </figure>
+                  <p class="guides__item-info"><b>Name,</b><br>
+                     Position</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="achievements__section">
+         <div class="container">
+            <h2 class="h2 achievements__title">California #1 Contractors License School</h2>
+            <p class="achievements__subtitle">Each year, thousands choose Contractors Intelligence School to obtain
+               their California Contractors License. Contractors Intelligence School has the highest success rate of all
+               the California contractors license exam schools. We offer full comprehensive <a href="#">online
+                  courses</a>, <a href="#">home-study</a>,
+               and <a href="#">in-class preparation</a>.</p>
+            <div class="achievements__row achievements__row_type2">
+               <div class="achievements__item achievements__item_type2">
+                  <figure class="achievements__item-icon achievements__item-icon_type2">
+                     <img src="assets/img/placeholder.webp" class="lazyload" alt="achievements 7"
+                        data-src="assets/img/icon-achievements7.svg" width="58" height="74">
+                  </figure>
+                  <div class="achievements__item-content">
+                     <p class="achievements__item-step">Step 1</p>
+                     <h3 class="achievements__item-title">Create your account</h3>
+                     <p class="achievements__item-text">Start by creating an account on our platform. This gives you
+                        access to all our resources and support tools.</p>
+                  </div>
+               </div>
+               <div class="achievements__item achievements__item_type2">
+                  <figure class="achievements__item-icon achievements__item-icon_type2">
+                     <img src="assets/img/placeholder.webp" class="lazyload" alt="achievements 8"
+                        data-src="assets/img/icon-achievements8.svg" width="39" height="49">
+                  </figure>
+                  <div class="achievements__item-content">
+                     <p class="achievements__item-step">Step 2</p>
+                     <h3 class="achievements__item-title">Submit your application with ease</h3>
+                     <p class="achievements__item-text">Once enrolled, we'll fast-track your progress by guiding you
+                        through the application review and submission process.</p>
+                  </div>
+               </div>
+               <div class="achievements__item achievements__item_type2">
+                  <figure class="achievements__item-icon achievements__item-icon_type2">
+                     <img src="assets/img/placeholder.webp" class="lazyload" alt="achievements 9"
+                        data-src="assets/img/icon-achievements9.svg" width="52" height="52">
+                  </figure>
+                  <div class="achievements__item-content">
+                     <p class="achievements__item-step">Step 3</p>
+                     <h3 class="achievements__item-title">Study Materials & Classes</h3>
+                     <p class="achievements__item-text">Start studying our comprehensive study materials and attend
+                        classes that fit your schedule, whether online, live streaming, or in-class.</p>
+                  </div>
+               </div>
+               <div class="achievements__item achievements__item_type2">
+                  <figure class="achievements__item-icon achievements__item-icon_type2">
+                     <img src="assets/img/placeholder.webp" class="lazyload" alt="achievements 10"
+                        data-src="assets/img/icon-achievements10.svg" width="42" height="54">
+                  </figure>
+                  <div class="achievements__item-content">
+                     <p class="achievements__item-step">Step 4</p>
+                     <h3 class="achievements__item-title">Practice and prepare for exam</h3>
+                     <p class="achievements__item-text">Use our practice exams and interactive tools to prepare
+                        thoroughly for the law and trade tests.</p>
+                  </div>
+               </div>
+               <div class="achievements__item achievements__item_type2">
+                  <figure class="achievements__item-icon achievements__item-icon_type2">
+                     <img src="assets/img/placeholder.webp" class="lazyload" alt="achievements 11"
+                        data-src="assets/img/icon-achievements11.svg" width="51" height="54">
+                  </figure>
+                  <div class="achievements__item-content">
+                     <p class="achievements__item-step">Step 5</p>
+                     <h3 class="achievements__item-title">Pass your exam</h3>
+                     <p class="achievements__item-text">With our guided preparation, pass your contractors licensing
+                        exam with confidence.</p>
+                  </div>
+               </div>
+               <div class="achievements__item achievements__item_type2">
+                  <figure class="achievements__item-icon achievements__item-icon_type2">
+                     <img src="assets/img/placeholder.webp" class="lazyload" alt="achievements 12"
+                        data-src="assets/img/icon-achievements12.svg" width="50" height="59">
+                  </figure>
+                  <div class="achievements__item-content">
+                     <p class="achievements__item-step">Step 6</p>
+                     <h3 class="achievements__item-title">Get your license and follow your dreams</h3>
+                     <p class="achievements__item-text">Receive your license and start your journey as a licensed
+                        contractor, ready to achieve your career goals.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="study__section">
+         <div class="container">
+            <h2 class="h2 study__title">Study options</h2>
+            <div class="study__row">
+               <div class="study__item">
+                  <div class="study__item-label">Sale!</div>
+                  <div class="study__item-head">
+                     <div class="study__item-image">
+                        <img src="assets/img/placeholder.webp" class="lazyload" data-src="assets/img/img-study1.jpg"
+                           alt="study 1" width="232" height="134">
+                     </div>
+                  </div>
+                  <h3 class="study__item-title">Full Online Course</h3>
+                  <p class="study__item-text"><b>Law & Trade Course</b></p>
+                  <p class="study__item-price">$495.00</p>
+                  <p class="study__item-subprice">Regular Price: $595.00</p>
+                  <div class="study__item-buttons">
+                     <button class="btn btn_sm">
+                        <div><span>Enroll Now</span><span>Enroll Now</span></div>
+                     </button>
+                     <button class="btn btn_sm btn_neutral">
+                        <div><span>See Details</span><span>See Details</span></div>
+                     </button>
+                  </div>
+               </div>
+               <div class="study__item">
+                  <div class="study__item-head study__item-head_type-2">
+                     <div class="study__item-image">
+                        <img src="assets/img/placeholder.webp" class="lazyload" data-src="assets/img/img-study2.jpg"
+                           alt="study 2" width="272" height="163">
+                     </div>
+                  </div>
+                  <h3 class="study__item-title study__item-title_type-2">
+                     <div class="study__item-mark">
+                        <div></div>
+                     </div><b>Full Online Course</b> <br> <b>+</b> <br>
+                     <b>LIVE STREAMING</b> <span>CLASS</span>
+                  </h3>
+                  <p class="study__item-price study__item-price_type-2">$595.00</p>
+                  <div class="study__item-buttons">
+                     <button class="btn btn_sm">
+                        <div><span>Enroll Now</span><span>Enroll Now</span></div>
+                     </button>
+                     <button class="btn btn_sm btn_neutral">
+                        <div><span>See Details</span><span>See Details</span></div>
+                     </button>
+                  </div>
+               </div>
+               <div class="study__item">
+                  <div class="study__item-head study__item-head_type-3">
+                     <div class="study__item-image">
+                        <img src="assets/img/placeholder.webp" class="lazyload" data-src="assets/img/img-study3.jpg"
+                           alt="study 3" width="232" height="134">
+                     </div>
+                  </div>
+                  <h3 class="study__item-title study__item-title_type-3"><span>Traditional</span> <br> Home Study
+                  </h3>
+                  <p class="study__item-price study__item-price_type-3">$295.00</p>
+                  <div class="study__item-buttons">
+                     <button class="btn btn_sm">
+                        <div><span>Enroll Now</span><span>Enroll Now</span></div>
+                     </button>
+                     <button class="btn btn_sm btn_neutral">
+                        <div><span>See Details</span><span>See Details</span></div>
+                     </button>
+                  </div>
+               </div>
+               <div class="study__item">
+                  <div class="study__item-head study__item-head_type-4">
+                     <div class="study__item-image study__item-image_type-4">
+                        <img src="assets/img/placeholder.webp" class="lazyload" data-src="assets/img/img-study4.png"
+                           alt="study 4" width="159" height="200">
+                     </div>
+                  </div>
+                  <h3 class="study__item-title study__item-title_type-4">Live<br>
+                     <span>In-Class</span><br>
+                     Preparation
+                  </h3>
+                  <p class="study__item-text study__item-text_type-4">Our live classes are available
+                     throughout California. <br><br>Includes Study Material</p>
+                  <p class="study__item-price study__item-price_type-3">$545.00</p>
+                  <div class="study__item-buttons">
+                     <button class="btn btn_sm">
+                        <div><span>Enroll Now</span><span>Enroll Now</span></div>
+                     </button>
+                     <button class="btn btn_sm btn_neutral">
+                        <div><span>See Details</span><span>See Details</span></div>
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="quote__section">
+         <div class="container">
+            <div class="quote__row">
+               <div class="quote__col">
+                  <blockquote class="quote__element">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="42" height="36" fill="none" viewBox="0 0 42 36">
+                        <path fill="#fff"
+                           d="M42 0c-3.928 10.43-6.799 21.924-8.611 34.481L21 36c2.014-7.494 4.13-14.127 6.345-19.899C29.561 10.228 31.928 5.114 34.446.76L42 0ZM20.849 0c-3.727 10.43-6.597 21.924-8.612 34.481L0 36c2.014-7.494 4.13-14.127 6.345-19.899C8.561 10.228 10.928 5.114 13.446.76L20.849 0Z" />
+                     </svg>
+                     <p class="quote__element-text">The practice you gave allowed me to pass on my first time through
+                        for both tests. If you can go with Contractors Intelligence School, I would do that because they
+                        provide mentorship in a way. So you don't feel like you're going through that process alone.
+                        You're supported through the process.</p>
+                     <div class="quote__element-author">
+                        <figure class="quote__element-avatar">
+                           <img src="assets/img/placeholder.webp" class="lazyload" data-src="assets/img/img-quote1.jpg"
+                              alt="quote 1" width="78" height="78">
+                        </figure>
+                        <p class="quote__element-name"><b>Gary Bostick</b><br>
+                           owner of Junked powered by Veterans </p>
+                     </div>
+                  </blockquote>
+               </div>
+               <div class="quote__col">
+                  <p class="quote__pretitle">Contact us</p>
+                  <h2 class="h2 quote__title">Get Licensed in as <br>Little as 2 Months</h2>
+                  <p class="quote__text">Don’t let paperwork hold you back. We handle the complexities while you focus
+                     on mastering your trade and passing the exam.</p>
+                  <a href="#" class="btn quote__btn quote__btn_type2">
+                     <div>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="26" fill="currentColor"
+                              viewBox="0 0 18 26">
+                              <path fill="#fff"
+                                 d="M3.61 11.814c1.468 2.883 3.671 5.07 6.609 6.557l2.203-2.185c.281-.31.625-.388 1.031-.233 1.125.372 2.313.558 3.563.558.25 0 .476.093.68.28a.907.907 0 0 1 .304.697v3.487c0 .248-.102.473-.305.675-.203.201-.43.302-.68.302-3.093 0-5.945-.752-8.554-2.256a16.725 16.725 0 0 1-6.188-6.138C.758 10.97 0 8.141 0 5.071c0-.248.102-.472.305-.674.203-.201.43-.302.68-.302H4.5c.281 0 .516.1.703.302a.967.967 0 0 1 .281.674c0 1.24.188 2.418.563 3.535.125.403.047.744-.234 1.023l-2.204 2.185Z" />
+                           </svg>1-800-425-7570</span>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="26" fill="currentColor"
+                              viewBox="0 0 18 26">
+                              <path fill="#fff"
+                                 d="M3.61 11.814c1.468 2.883 3.671 5.07 6.609 6.557l2.203-2.185c.281-.31.625-.388 1.031-.233 1.125.372 2.313.558 3.563.558.25 0 .476.093.68.28a.907.907 0 0 1 .304.697v3.487c0 .248-.102.473-.305.675-.203.201-.43.302-.68.302-3.093 0-5.945-.752-8.554-2.256a16.725 16.725 0 0 1-6.188-6.138C.758 10.97 0 8.141 0 5.071c0-.248.102-.472.305-.674.203-.201.43-.302.68-.302H4.5c.281 0 .516.1.703.302a.967.967 0 0 1 .281.674c0 1.24.188 2.418.563 3.535.125.403.047.744-.234 1.023l-2.204 2.185Z" />
+                           </svg>1-800-425-7570</span>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="faq__section">
+         <div class="container">
+            <h2 class="faq__title h2">FAQ</h2>
+            <div class="faq__list">
+               <div class="faq__item">
+                  <div class="faq__item-head">
+                     <p>What are the basic requirements for a California contractor’s license?</p>
+                     <div class="faq__item-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="8"
+                           fill="none" viewBox="0 0 14 8">
+                           <path fill="#fff" fill-rule="evenodd"
+                              d="M13.04 2.04A1 1 0 0 0 11.72.543l-.094.083L7 5.253 2.374.626a1 1 0 0 0-1.32-.083L.96.626a1 1 0 0 0-.084 1.32l.084.094 5.333 5.334a1 1 0 0 0 1.32.083l.094-.083L13.04 2.04Z"
+                              clip-rule="evenodd" />
+                        </svg></div>
+                  </div>
+                  <div class="faq__item-body">
+                     <div class="faq__item-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis magni quasi aperiam
+                           unde et. Distinctio temporibus quam molestiae? Dolore aliquid temporibus voluptatum quasi
+                           debitis illum omnis corrupti a excepturi.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="faq__item">
+                  <div class="faq__item-head">
+                     <p>Can I substitute education for experience?</p>
+                     <div class="faq__item-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="8"
+                           fill="none" viewBox="0 0 14 8">
+                           <path fill="#fff" fill-rule="evenodd"
+                              d="M13.04 2.04A1 1 0 0 0 11.72.543l-.094.083L7 5.253 2.374.626a1 1 0 0 0-1.32-.083L.96.626a1 1 0 0 0-.084 1.32l.084.094 5.333 5.334a1 1 0 0 0 1.32.083l.094-.083L13.04 2.04Z"
+                              clip-rule="evenodd" />
+                        </svg></div>
+                  </div>
+                  <div class="faq__item-body">
+                     <div class="faq__item-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis magni quasi aperiam
+                           unde et. Distinctio temporibus quam molestiae? Dolore aliquid temporibus voluptatum quasi
+                           debitis illum omnis corrupti a excepturi.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="faq__item">
+                  <div class="faq__item-head">
+                     <p>How long does it take to get a license?</p>
+                     <div class="faq__item-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="8"
+                           fill="none" viewBox="0 0 14 8">
+                           <path fill="#fff" fill-rule="evenodd"
+                              d="M13.04 2.04A1 1 0 0 0 11.72.543l-.094.083L7 5.253 2.374.626a1 1 0 0 0-1.32-.083L.96.626a1 1 0 0 0-.084 1.32l.084.094 5.333 5.334a1 1 0 0 0 1.32.083l.094-.083L13.04 2.04Z"
+                              clip-rule="evenodd" />
+                        </svg></div>
+                  </div>
+                  <div class="faq__item-body">
+                     <div class="faq__item-content">
+                        <ul>
+                           <li>COURSE TUITION (Varies based on the program selected.)</li>
+                           <li>STATE APPLICATION FEE: $450.00 (Paid directly to the state with the application.)</li>
+                           <li>FINGERPRINTING: Approximately $75.00</li>
+                           <li>SOLE-OWNERSHIP INITIAL LICENSE FEE: $200.00 (Paid directly to the state after the student
+                              passes the exam.)</li>
+                           <li>CORP/PARTNERS/JV/LLC INITIAL LICENSE FEE: $350.00 (Paid directly to the state after the
+                              student passes the exam.)</li>
+                           <li>CONTRACTOR'S BOND: approx. $233 per year.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="faq__item">
+                  <div class="faq__item-head">
+                     <p>What is the cost of getting a license?</p>
+                     <div class="faq__item-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="8"
+                           fill="none" viewBox="0 0 14 8">
+                           <path fill="#fff" fill-rule="evenodd"
+                              d="M13.04 2.04A1 1 0 0 0 11.72.543l-.094.083L7 5.253 2.374.626a1 1 0 0 0-1.32-.083L.96.626a1 1 0 0 0-.084 1.32l.084.094 5.333 5.334a1 1 0 0 0 1.32.083l.094-.083L13.04 2.04Z"
+                              clip-rule="evenodd" />
+                        </svg></div>
+                  </div>
+                  <div class="faq__item-body">
+                     <div class="faq__item-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis magni quasi aperiam
+                           unde et. Distinctio temporibus quam molestiae? Dolore aliquid temporibus voluptatum quasi
+                           debitis illum omnis corrupti a excepturi.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="faq__item">
+                  <div class="faq__item-head">
+                     <p>How many exams do I need to pass?</p>
+                     <div class="faq__item-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="8"
+                           fill="none" viewBox="0 0 14 8">
+                           <path fill="#fff" fill-rule="evenodd"
+                              d="M13.04 2.04A1 1 0 0 0 11.72.543l-.094.083L7 5.253 2.374.626a1 1 0 0 0-1.32-.083L.96.626a1 1 0 0 0-.084 1.32l.084.094 5.333 5.334a1 1 0 0 0 1.32.083l.094-.083L13.04 2.04Z"
+                              clip-rule="evenodd" />
+                        </svg></div>
+                  </div>
+                  <div class="faq__item-body">
+                     <div class="faq__item-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis magni quasi aperiam
+                           unde et. Distinctio temporibus quam molestiae? Dolore aliquid temporibus voluptatum quasi
+                           debitis illum omnis corrupti a excepturi.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="faq__item">
+                  <div class="faq__item-head">
+                     <p>What study options are available?</p>
+                     <div class="faq__item-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="8"
+                           fill="none" viewBox="0 0 14 8">
+                           <path fill="#fff" fill-rule="evenodd"
+                              d="M13.04 2.04A1 1 0 0 0 11.72.543l-.094.083L7 5.253 2.374.626a1 1 0 0 0-1.32-.083L.96.626a1 1 0 0 0-.084 1.32l.084.094 5.333 5.334a1 1 0 0 0 1.32.083l.094-.083L13.04 2.04Z"
+                              clip-rule="evenodd" />
+                        </svg></div>
+                  </div>
+                  <div class="faq__item-body">
+                     <div class="faq__item-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis magni quasi aperiam
+                           unde et. Distinctio temporibus quam molestiae? Dolore aliquid temporibus voluptatum quasi
+                           debitis illum omnis corrupti a excepturi.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="faq__item">
+                  <div class="faq__item-head">
+                     <p>What happens if I fail the exam?</p>
+                     <div class="faq__item-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="8"
+                           fill="none" viewBox="0 0 14 8">
+                           <path fill="#fff" fill-rule="evenodd"
+                              d="M13.04 2.04A1 1 0 0 0 11.72.543l-.094.083L7 5.253 2.374.626a1 1 0 0 0-1.32-.083L.96.626a1 1 0 0 0-.084 1.32l.084.094 5.333 5.334a1 1 0 0 0 1.32.083l.094-.083L13.04 2.04Z"
+                              clip-rule="evenodd" />
+                        </svg></div>
+                  </div>
+                  <div class="faq__item-body">
+                     <div class="faq__item-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis magni quasi aperiam
+                           unde et. Distinctio temporibus quam molestiae? Dolore aliquid temporibus voluptatum quasi
+                           debitis illum omnis corrupti a excepturi.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="request__section">
+         <img src="assets/img/placeholder.webp" data-src="assets/img/img-request.jpg" alt="request"
+            class="request__bg lazyload" width="375" height="680">
+         <div class="container">
+            <div class="request__form">
+               <form>
+                  <h2 class="request__title">Quick Contact Form</h2>
+                  <div class="request__row">
+                     <div class="request__col">
+                        <div class="input-group">
+                           <label for="name" class="label">Full Name</label>
+                           <input class="input" type="text" placeholder="Enter Full Name" id="name">
+                        </div>
+                        <div class="input-group">
+                           <label for="email" class="label">Email Address</label>
+                           <input class="input" type="email" placeholder="Enter Email Address" id="email">
+                        </div>
+                        <div class="input-group">
+                           <label for="phone" class="label">Telephone (ex. (415) 555-2671)</label>
+                           <input class="input" type="phone" placeholder="Enter Telephone Number" id="phone">
+                        </div>
+                     </div>
+                     <div class="request__col">
+                        <div class="input-group">
+                           <label for="message" class="label">Message</label>
+                           <textarea id="message" class="textarea"></textarea>
+                        </div>
+                        <button class="btn btn_sm">
+                           <div type="submit"><span>Submit</span><span>Submit</span></div>
+                        </button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </section>
+
+      <section class="quote__section">
+         <div class="container">
+            <div class="quote__row">
+               <div class="quote__col">
+                  <blockquote class="quote__element">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="42" height="36" fill="none" viewBox="0 0 42 36">
+                        <path fill="#fff"
+                           d="M42 0c-3.928 10.43-6.799 21.924-8.611 34.481L21 36c2.014-7.494 4.13-14.127 6.345-19.899C29.561 10.228 31.928 5.114 34.446.76L42 0ZM20.849 0c-3.727 10.43-6.597 21.924-8.612 34.481L0 36c2.014-7.494 4.13-14.127 6.345-19.899C8.561 10.228 10.928 5.114 13.446.76L20.849 0Z" />
+                     </svg>
+                     <p class="quote__element-text">I just went with Contractors Intelligence School and they help me
+                        out every step of the way. It was like a 98% guaranteed success rate or your money back.
+                        Everything that you're dreaming of: "I'm going to own my own business someday", that end goal,
+                        it starts to happen.</p>
+                     <div class="quote__element-author">
+                        <figure class="quote__element-avatar">
+                           <img src="assets/img/placeholder.webp" class="lazyload" data-src="assets/img/img-quote2.jpg"
+                              alt="quote 1" width="78" height="78">
+                        </figure>
+                        <p class="quote__element-name"><b>Greg Fox</b><br>
+                           owner of Fox Heating and Air Conditioning </p>
+                     </div>
+                  </blockquote>
+               </div>
+               <div class="quote__col">
+                  <h2 class="h2 quote__title">Get Licensed in as <br>Little as 2 Months</h2>
+                  <p class="quote__text"><b>From application to exam, we support you every step of the way.</b> Choose
+                     the best
+                     course for your needs and start your path to becoming a licensed contractor.</p>
+                  <button class="btn quote__btn ">
+                     <div>
+                        <span>Create Free Demo Account</span>
+                        <span>Create Free Demo Account</span>
+                     </div>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </section>
+
+   </main>
+
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__row">
+            <div class="footer__col">
+               <p class="footer__title">Courses</p>
+               <ul>
+                  <li><a href="#">Home Study</a></li>
+                  <li><a href="#">In-Class Prep</a></li>
+                  <li><a href="#">Live Streaming Class</a></li>
+                  <li><a href="#">Online Course</a></li>
+               </ul>
+               <p class="footer__title">BUSINESS SERVICES</p>
+               <ul>
+                  <li><a href="#">Incorporation Services</a></li>
+               </ul>
+            </div>
+            <div class="footer__col">
+               <p class="footer__title">INFORMATION</p>
+               <ul>
+                  <li><a href="#">Requirements</a></li>
+                  <li><a href="#">License Classifications</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Tech Requirements</a></li>
+                  <li><a href="#">Learning Resources</a></li>
+               </ul>
+            </div>
+            <div class="footer__col">
+               <a href="#" class="footer__logo">
+                  <img src="assets/img/placeholder.webp" alt="footer" class="lazyload" data-src="assets/img/logo2.png"
+                     width="242" height="61">
+               </a>
+               <p class="footer__call-text">Call Today</p>
+               <p class="footer__call"><a href="tel:18004257570">1-800-425-7570</a></p>
+            </div>
+         </div>
+         <hr class="footer__divider">
+         <ul class="footer__links">
+            <li><a href="#">Site Map</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+         </ul>
+         <p class="footer__copy">&copy; 2024 Contractors Intelligence School, Inc. All Rights Reserved.</p>
+      </div>
+   </footer>
+
+   <div class="fastpanel">
+      <div class="container">
+         <div class="fastpanel__row">
+            <button class="btn">
+               <div><span>Enroll Now</span><span>Enroll Now</span></div>
+            </button>
+            <button class="btn btn_neutral">
+               <div><span>Request Brochure</span><span>Request Brochure</span></div>
+            </button>
+            <div class="fastpanel__call">
+               <p><a href="tel:18004257570">Call Us 1-800-425-7570</a></p>
+               <p>Se Habla Español</p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="assets/js/lazyload.js"></script>
+   <script src="assets/js/swiper-bundle.min.js"></script>
+   <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+.fastpanel {
+  box-shadow: 0px -1px 0px 0px #0000001a;
+  background: #f9f9f9;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  padding: 14px 0;
+  &__row {
+    display: flex;
+    gap: 20px;
+    padding: 0 8px;
+    .btn {
+      width: 50%;
+      font-size: 0.875rem;
+      line-height: 1.714;
+      padding: 6px 20px;
+    }
+  }
+  &__call {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .fastpanel {
+    &__row {
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+      .btn {
+        width: auto;
+        min-width: 150px;
+      }
+    }
+    &__call {
+      display: block;
+      text-align: center;
+      p {
+        &:nth-of-type(1) {
+          color: $bodyColorNeutral;
+          font-size: 0.938rem;
+          line-height: 1.308;
+          a {
+            text-decoration: none;
+            margin-bottom: 1px;
+          }
+        }
+        &:nth-of-type(2) {
+          font-size: 0.844rem;
+          line-height: 1.481;
+          color: $bodyColorAccent;
+        }
+      }
+    }
+  }
+}
