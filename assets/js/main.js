@@ -27,22 +27,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const buttonReview = document.querySelectorAll(".reviews__item-btn");
 
-  buttonReview.forEach((button) => {
-    button.addEventListener("click", () => {
-      const content = button.closest(".reviews__item-content");
-      content.classList.toggle("reviews__item-content_active");
+  if (buttonReview) {
+    buttonReview.forEach((button) => {
+      button.addEventListener("click", () => {
+        const content = button.closest(".reviews__item-content");
+        content.classList.toggle("reviews__item-content_active");
+      });
     });
-  });
+  }
 
   const faqItemHeads = document.querySelectorAll(".faq__item-head");
-
-  faqItemHeads.forEach((head) => {
-    head.addEventListener("click", function () {
-      const activeItem = document.querySelector(".faq__item.faq__item_active");
-      if (activeItem && activeItem !== this.parentElement) {
-        activeItem.classList.remove("faq__item_active");
-      }
-      this.parentElement.classList.toggle("faq__item_active");
+  if (faqItemHeads) {
+    faqItemHeads.forEach((head) => {
+      head.addEventListener("click", function () {
+        const activeItem = document.querySelector(
+          ".faq__item.faq__item_active"
+        );
+        if (activeItem && activeItem !== this.parentElement) {
+          activeItem.classList.remove("faq__item_active");
+        }
+        this.parentElement.classList.toggle("faq__item_active");
+      });
     });
-  });
+  }
 });
