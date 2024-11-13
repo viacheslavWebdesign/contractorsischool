@@ -467,12 +467,14 @@
     position: absolute;
     left: 21px;
     bottom: 0;
-    div {
+    display: block;
+    & > span {
       background: #f00;
       width: 20px;
       height: 20px;
       border-radius: 50%;
       z-index: 1;
+      display: block;
     }
     &:before {
       content: "";

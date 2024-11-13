@@ -121,10 +121,11 @@ button {
   svg {
     margin-right: 8px;
   }
-  div {
+  & > span {
     position: relative;
     overflow: hidden;
-    span {
+    display: block;
+    & > span {
       display: flex;
       align-items: center;
       transition: transform 0.3s ease-in-out;
@@ -178,8 +179,8 @@ button {
       display: none;
     }
     &:hover {
-      div {
-        span {
+      & > span {
+        & > span {
           &:nth-of-type(1) {
             transform: translateY(-100%);
           }

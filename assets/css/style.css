@@ -502,13 +502,15 @@
   position: absolute;
   left: 21px;
   bottom: 0;
+  display: block;
 }
-.study__item-mark div {
+.study__item-mark > span {
   background: #f00;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   z-index: 1;
+  display: block;
 }
 .study__item-mark:before {
   content: "";
