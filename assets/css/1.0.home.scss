@@ -16,7 +16,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center;
+      object-position: top center;
     }
   }
   &__content {
@@ -384,10 +384,11 @@
     position: relative;
     z-index: 1;
     &_type-2 {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
       line-height: 1;
+      font-weight: normal;
       b {
-        font-weight: 900;
+        font-weight: 700;
       }
       br:last-of-type + b,
       span {
@@ -395,29 +396,31 @@
       }
     }
     &_type-3 {
-      font-size: 1.688rem;
-      font-weight: 400;
+      font-size: 1.5rem;
+      font-weight: normal;
       margin-bottom: 5px;
-      span {
-        font-size: 1.563rem;
-        font-weight: 300;
+      line-height: 1.25;
+      b {
+        font-weight: 700;
       }
     }
     &_type-4 {
-      padding: 28px 0 0 20px;
+      padding: 40px 0 0 20px;
       text-align: left;
-      font-weight: 300;
-      span {
-        font-weight: 400;
-        font-size: 1.75rem;
+      font-weight: normal;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      line-height: 1.25;
+      b {
+        font-weight: 700;
       }
     }
   }
   &__item-text {
     text-align: center;
     color: $bodyColorSecondary;
-    font-size: 0.813rem;
-    line-height: 1.308;
+    font-size: 0.75rem;
+    line-height: 1.5;
     position: relative;
     z-index: 1;
     &_type-4 {
@@ -425,7 +428,7 @@
       text-align: left;
       max-width: 171px;
       color: $bodyColorPrimary;
-      margin-bottom: 16px;
+      margin-bottom: 19px;
     }
   }
   &__item-price {
@@ -470,8 +473,8 @@
     display: block;
     & > span {
       background: #f00;
-      width: 20px;
-      height: 20px;
+      width: 16px;
+      height: 16px;
       border-radius: 50%;
       z-index: 1;
       display: block;
@@ -483,10 +486,10 @@
       left: 50%;
       transform: translate(-50%, -50%) scale(1);
       border-radius: 50%;
-      border: solid 2px #f00;
-      width: 28px;
-      height: 28px;
-      animation: markPulse 2s ease-in-out infinite;
+      border: solid 3px #f00;
+      width: 30px;
+      height: 30px;
+      animation: markPulse 1.5s ease-in-out infinite;
     }
     &:after {
       content: "";
@@ -495,26 +498,22 @@
       left: 50%;
       transform: translate(-50%, -50%) scale(1);
       border-radius: 50%;
-      border: solid 1px #f00;
-      width: 40px;
-      height: 40px;
-      animation: markPulse 2s ease-in-out infinite;
+      border: solid 2px #f00;
+      width: 46px;
+      height: 46px;
+      animation: markPulse 1.5s ease-in-out infinite;
     }
   }
 }
 
 @keyframes markPulse {
   0% {
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(0.25);
     opacity: 1;
-  }
-  50% {
-    transform: translate(-50%, -50%) scale(0.5);
-    opacity: 0;
   }
   100% {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.25);
+    opacity: 0;
   }
 }
 
@@ -585,6 +584,22 @@
   }
   &__item-text {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    &_type1 {
+      max-width: 305px;
+    }
+    &_type2,
+    &_type3,
+    &_type6 {
+      max-width: 285px;
+    }
+    &_type4 {
+      max-width: 310px;
+    }
+    &_type5 {
+      max-width: 295px;
+    }
   }
 }
 
@@ -598,6 +613,16 @@
     &__item {
       width: calc(50% - 10px);
     }
+    &__item-text {
+      &_type1,
+      &_type2,
+      &_type3,
+      &_type4,
+      &_type5,
+      &_type6 {
+        max-width: 100%;
+      }
+    }
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -610,12 +635,30 @@
     }
     &__item {
       width: calc((100% - 40px) / 3);
-      padding: 30px 28px 25px;
+      padding: 30px 24px 25px;
     }
     &__item-title {
       max-width: 294px;
       margin-left: auto;
       margin-right: auto;
+    }
+    &__item-text {
+      &_type1,
+      &_type2 {
+        max-width: 321px;
+      }
+      &_type3 {
+        max-width: 307px;
+      }
+      &_type4 {
+        max-width: 310px;
+      }
+      &_type5 {
+        max-width: 288px;
+      }
+      &_type6 {
+        max-width: 325px;
+      }
     }
   }
 }
@@ -636,6 +679,11 @@
     margin-bottom: 30px;
     font-size: 1.563rem;
     line-height: 1.44;
+    // font-weight: 300;
+    // b,
+    // strong {
+    //   font-weight: 600;
+    // }
   }
   &__author {
     display: flex;
@@ -965,6 +1013,11 @@
     flex-direction: column;
     gap: 40px;
   }
+  &__col {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
   &__item-icon {
     display: flex;
     justify-content: center;
@@ -978,6 +1031,22 @@
   }
   &__item-text {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    &_type1,
+    &_type2 {
+      max-width: 271px;
+    }
+    &_type3 {
+      max-width: 267px;
+    }
+    &_type4 {
+      max-width: 274px;
+    }
+    &_type5,
+    &_type6 {
+      max-width: 288px;
+    }
   }
   &__item-step {
     text-align: center;
@@ -1001,11 +1070,14 @@
         gap: 46px;
       }
     }
+    &__col {
+      gap: 60px;
+    }
     &__item {
-      width: calc(50% - 40px);
       display: flex;
       &_type2 {
         display: block;
+        width: calc(50% - 23px);
       }
     }
     &__item-icon {
@@ -1024,8 +1096,9 @@
         height: auto;
       }
       &_type2 {
-        height: 74px;
-        width: 53px;
+        height: 60px;
+        width: 60px;
+        margin-bottom: 20px;
       }
     }
     &__item-title {
@@ -1034,6 +1107,23 @@
     }
     &__item-text {
       text-align: left;
+      margin-left: 0;
+      &_type1 {
+        max-width: 349px;
+      }
+      &_type2 {
+        max-width: 335px;
+      }
+      &_type3 {
+        max-width: 329px;
+      }
+      &_type4 {
+        max-width: 338px;
+      }
+      &_type5,
+      &_type6 {
+        max-width: 288px;
+      }
     }
     &__item-step {
       text-align: left;
@@ -1051,6 +1141,16 @@
         &:hover {
           color: $bodyColorNeutral;
         }
+      }
+    }
+    &__row {
+      &_type2 {
+        gap: 46px 60px;
+      }
+    }
+    &__item {
+      &_type2 {
+        width: calc((100% - 120px) / 3);
       }
     }
   }
@@ -1253,7 +1353,7 @@
     }
     &__text {
       margin-bottom: 26px;
-      max-width: calc(100% - 435px);
+      max-width: 692px;
     }
     &__buttons {
       a {
