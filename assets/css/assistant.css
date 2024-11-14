@@ -380,7 +380,7 @@ button {
   line-height: 1.222;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 14px 25px;
+  padding: 14px 12px;
   background: var(--cstm-body-background-neutral) !important;
   border: var(--cstm-body-background-neutral) solid 1px !important;
   border-radius: 4px;

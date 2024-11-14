@@ -318,7 +318,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
-  padding: 0 30px;
 }
 .study__item {
   width: 100%;
@@ -1430,12 +1429,15 @@
 .app__buttons a {
   text-decoration: none;
   display: block;
-  height: 43px;
+  max-width: 140px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .app__buttons a img {
   display: block;
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 100%;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1579,12 +1581,18 @@
   width: calc(50% - 19px);
 }
 .guides__item-image {
-  height: 149px;
-  width: 149px;
+  width: 100%;
+  max-width: 149px;
   position: relative;
   margin: 0 auto 20px;
   overflow: hidden;
   border-radius: 50%;
+}
+.guides__item-image:after {
+  content: "";
+  position: relative;
+  padding-top: 100%;
+  display: block;
 }
 .guides__item-image img {
   position: absolute;
@@ -1897,12 +1905,16 @@
 }
 .header__logo {
   display: block;
-  height: 73px;
+  max-width: 240px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 20px;
 }
 .header__logo img {
   display: block;
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 100%;
 }
 .header__btn {
   width: 54px;
@@ -2008,6 +2020,9 @@
 @media only screen and (min-width: 1200px) {
   .header {
     background: #f8f9fa;
+  }
+  .header__logo {
+    max-width: 245px;
   }
   .header__phone:hover, .header__profile:hover, .header__request:hover {
     color: var(--cstm-body-color-accent);
@@ -2244,7 +2259,7 @@
   width: 50%;
   font-size: 0.875rem;
   line-height: 1.714;
-  padding: 6px 20px;
+  padding: 6px 8px;
 }
 .fastpanel__call {
   display: none;

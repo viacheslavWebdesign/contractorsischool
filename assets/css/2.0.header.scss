@@ -79,11 +79,13 @@
   }
   &__logo {
     display: block;
-    height: 73px;
+    max-width: 240px;
+    flex: 1;
+    margin-right: 20px;
     img {
       display: block;
-      height: 100%;
-      width: auto;
+      height: auto;
+      width: 100%;
     }
   }
   &__btn {
@@ -180,6 +182,9 @@
 @media only screen and (min-width: 1200px) {
   .header {
     background: #f8f9fa;
+    &__logo {
+      max-width: 245px;
+    }
     &__phone,
     &__profile,
     &__request {
