@@ -121,6 +121,9 @@
         &:not(:last-of-type) {
           margin-bottom: 15px;
         }
+        span {
+          display: none;
+        }
       }
     }
   }
